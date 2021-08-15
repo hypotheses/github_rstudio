@@ -1,0 +1,27 @@
+---
+title: "Titanic Exploration"
+author: "Bhoom Suktitipat"
+date: "8/15/2021"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview of the Data
+
+Training dataset was obtained from [Kaggle](https://www.kaggle.com/c/titanic/data?select=train.csv)
+
+## Internal Titanic Data
+```{r titanic, echo = TRUE}
+summary(Titanic)
+```
+
+## Kaggle Data
+
+```{r titanic_kaggle, echo = TRUE}
+data = read.csv("../data/train.csv")
+Summary(data)
+```
+
